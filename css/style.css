@@ -133,8 +133,6 @@ nav a:hover, nav a:focus {
 }
 
 /* Step 4: Write selector/rule property to style the container */
-/* Makes it look really weird */
-/* Where is the new company inc photo? */
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -145,11 +143,10 @@ nav a:hover, nav a:focus {
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
 
-/* There is no .intro class */
 /* I do not see the image appearing at all */
 .container div:first-child {
   grid-column: 1 / -1;
-  background-image: url(".../images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-repeat: no-repeat;  
 }
 
