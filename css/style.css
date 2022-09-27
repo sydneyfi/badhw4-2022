@@ -108,15 +108,15 @@ Your Code Here
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
 
-nav a:focus {
+nav a:hover, nav a:focus {
   text-decoration: underline;
   text-decoration-color: #000000;
 }
 
-nav a:hover {
+/* nav a:focus {
   text-decoration: underline;
   text-decoration-color: #000000;
-}
+} */
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 
@@ -222,11 +222,9 @@ nav {
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
  
- .text-block {
+.text-block {
   max-height: 250px;
-  /* not sure if this is right? */
-  /* Ensures that  any content that goes outside their grid cell is still reachable.  */
-  overflow: visible;
+  overflow: auto;
  }
 }
 
